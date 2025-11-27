@@ -1,13 +1,3 @@
-#بانل مقدم هديه من MTX TEAM 
-#البانل صناعه فريق MTX بالكامل 
-#╭───𓆩🛡️𓆪───╮
-#      👨‍💻 𝘿𝙚𝙫: @UXD_0 
-#      📢   𝘾𝙝: @UXD_0
-#سنكر لا تسرق
-#تمت برمجة البوت بالكامل By MTX 
-# الحقوق محفوظة لفريق MTX
-# 
-#حط توكن الضيف في سطر 180
 import os
 import json
 import time
@@ -34,7 +24,7 @@ def initialize_files():
 
     if not os.path.exists(developers_file):
         with open(developers_file, "w") as f:
-            json.dump({"developers": [7375963526]}, f)
+            json.dump({"developers": [7260243555]}, f)
 
     if not os.path.exists(groups_file):
         with open(groups_file, "w") as f:
@@ -62,7 +52,7 @@ def is_allowed_chat(message):
     return message.chat.id in allowed_chats
 
 # تفعيل البوت في المجموعة
-@bot.message_handler(commands=['MTX'])
+@bot.message_handler(commands=['MTX-ACTIVE-BOT'])
 def set_group(message):
     # تحقق إن اللي بيستخدم الأمر مطور
     if not is_developer(message.from_user.id):
@@ -81,7 +71,7 @@ def set_group(message):
 
 
 # ⛔ أمر /kill لإلغاء التفعيل
-@bot.message_handler(commands=['kill'])
+@bot.message_handler(commands=['MTX-DEACTIVATE-BOT'])
 def kill_group(message):
     # تحقق إن اللي بيستخدم الأمر مطور
     if not is_developer(message.from_user.id):
@@ -378,11 +368,11 @@ def help_command(message):
         return
     help_text = f"""
 ━━━━━━━━━━━━━━━━━━━━
-<b>✨🚀 〔 MTX BOT SX  〕🚀✨</b>
+<b>〔 MTX BOT SX  〕</b>
 ━━━━━━━━━━━━━━━━━━━━
-<i>💎 لوحة تحكم احترافية لإدارة الأصدقاء 💎</i>
+<i>MTX SX TEAM BOT FRIEND</i>
 
-<b>🧩 الأوامر:</b>
+<b> الأوامر:</b>
 
 <code>/bot [ID]</code>
 <i>➕ إضافة صديق لمدة يوم واحد.</i>
@@ -390,7 +380,10 @@ def help_command(message):
 <code>/remove [ID]</code>
 <i>➖ حذف صديق معين عبر المعرف.</i>
 
-<code>/MTX</code>
+<code>/MTX-ACTIVE-BOT</code>
+<i>⚙️ تفعيل البوت في المجموعة (للمطورين فقط).</i>
+
+<code>/MTX-DEACTIVATE-BOT</code>
 <i>⚙️ تفعيل البوت في المجموعة (للمطورين فقط).</i>
 
 ━━━━━━━━━━━━━━━━━━━━
@@ -446,4 +439,4 @@ def list_users(message):
 if __name__ == "__main__":
     fetch_token()
     auto_check_expiry()
-   bot.polling(skip_pending=True)none_stop=True)
+    bot.polling(none_stop=True)
