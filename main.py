@@ -17,7 +17,7 @@ import threading
 from telebot import types
 from byte import Encrypt_ID, encrypt_api
 
-TOKEN = "7375963526:AAElF2wqC2TdzGSDE2RPADWAc_drX1epuf8"
+TOKEN = "8479232901:AAFIKOsbDWRvAlN3ARgrdtpQUSI9YVOHcMg"
 bot = telebot.TeleBot(TOKEN)
 
 users_file = "users.json"
