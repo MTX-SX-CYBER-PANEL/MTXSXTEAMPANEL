@@ -171,8 +171,8 @@ def fetch_token():
     global JwT_tokw
 
     try:
-        uid = "4160614447"
-        password = "7A1B7A846795CA7EB610920D26B9D7EC446811C8A8161E29D34C7C4B5C45507D"
+        uid = "4085833121"
+        password = "DE44F300EBD0D730A4DC4F1AA59A7807E962277316AEEA80CC5096A75D26C996"
 
         # المرحلة 1: طلب guest token من جارينا
         url = "https://100067.connect.garena.com/oauth/guest/token/grant"
