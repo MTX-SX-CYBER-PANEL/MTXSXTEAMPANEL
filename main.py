@@ -390,7 +390,7 @@ def help_command(message):
 <code>/remove [ID]</code>
 <i>➖ حذف صديق معين عبر المعرف.</i>
 
-<code>/masry</code>
+<code>/MTX</code>
 <i>⚙️ تفعيل البوت في المجموعة (للمطورين فقط).</i>
 
 ━━━━━━━━━━━━━━━━━━━━
